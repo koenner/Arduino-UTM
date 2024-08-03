@@ -1,0 +1,17 @@
+Explanation of the Code:
+Pin Definitions: The pins are defined according to the setup described in the document. These pins are connected to various components like buttons, LEDs, the stepper motor driver (MA860H), the load cell interface (NAU7802), and the SD card adapter.
+
+Load Cell Calibration: The calibration_factor variable is used to calibrate the load cell. This value should be adjusted based on a known weight.
+
+Button Functions:
+
+The FORWARD and REVERSE buttons move the stepper motor CW and CCW, respectively, as long as they are pressed.
+The COMP and TENSILE buttons trigger compression and tensile tests, respectively. These tests log data from the load cell while the motor is running.
+The STOP button halts all motor movement and safely closes the data file on the SD card.
+LED Indicators: LEDs provide visual feedback based on which button is pressed and the machine's current operation.
+
+Motor Control: The pulseMotor() function generates pulses to drive the stepper motor in the specified direction.
+
+Data Logging: The sketch logs load cell data to an SD card with each motor pulse, ensuring synchronized data collection.
+
+This sketch integrates motor control, user input handling, data logging, and load cell measurement to manage tensile and compression testing for a universal test machine.
