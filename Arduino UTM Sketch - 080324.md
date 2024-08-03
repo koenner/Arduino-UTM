@@ -1,6 +1,3 @@
-# Arduino-UTM
-Universal_Test_Machine.ino
-/*
  * Universal Test Machine Arduino Sketch
  * 
  * This sketch supports a universal test machine for tensile and compression testing.
