@@ -155,9 +155,9 @@ void moveReverse() {
 // Function to generate motor pulses
 void pulseMotor() {
   digitalWrite(PUL_MINUS, HIGH);
-  delayMicroseconds(2);  // Pulse duration
+  delayMicroseconds(2000);  // Pulse duration
   digitalWrite(PUL_MINUS, LOW);
-  delayMicroseconds(2);
+  delayMicroseconds(2000);
 }
 
 // Function to log data from the load cell
